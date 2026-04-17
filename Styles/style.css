@@ -6,8 +6,6 @@
 }
 
 body {
-    overflow: hidden;
-	position: fixed;
 	width: 100%;
 	height: 100%;
     background-color: rgb(8, 8, 8);
@@ -21,9 +19,9 @@ body::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
-		linear-gradient(90deg, rgba(255, 0, 255, 0.1) 1px, transparent 1px);
-	background-size: 50px 50px;
+	background-image: linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+	background-size: 80px 80px;
 	z-index: -1;
 }
 
@@ -31,10 +29,19 @@ h1, h2, h3 {
     color: #687894;
 } 
 
+a {
+    width: 100%;
+    height: 100%;
+}
+
 iframe {
     max-width: 100%;
-    width: 960px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+embed {
+    width: 100%;
 }
 
 /*? Header Styles */
@@ -63,57 +70,39 @@ iframe {
     align-content: center;
 }
 .headerButton {
+    width: 100px;
+    max-width: 100px;
     padding: 10px;
     border-radius: 0.2rem;
-    background-color: rgba(34, 148, 40, 0.637);
+    background-color: rgba(0, 255, 0, 0.60);
     align-self: center;
     align-content: center;
 }
 .headerButton:hover {
     border-radius: 0rem;
-    background-color: rgba(21, 255, 0, 0.63);
-    scale: 105%;
+    background-color: rgba(0, 255, 0, 0.80);
+    /*scale: 105%;*/
 }
 
 /*? Body Styles */
-.bodyContainer { 
-    align-self: center;
-    align-content: center;
+.bodyContainer {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
     width: 100%;
     height: 100%;
-    min-height: 700px;
-    background-color: rgba(39, 179, 62, 0.014);
+    min-height: 800px;
     box-shadow: 0 20px 40px -12px black;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
 }
 
-
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid green;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
 /*? EFFECTS */
-.vhs-static {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: repeating-linear-gradient(
-		90deg,
-		transparent,
-		transparent 2px,
-		rgba(255, 255, 255, 0.01) 2px,
-		rgba(255, 255, 255, 0.01) 4px
-	);
-	opacity: 0.3;
-	animation: vhsStatic 0.2s steps(2, end) infinite;
-	pointer-events: none;
-}
-
-@keyframes vhsStatic {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(4px);
-	}
-}

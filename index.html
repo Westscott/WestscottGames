@@ -7,6 +7,7 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+
             gtag('config', 'G-R9QSKK5S5C');
         </script>
         <meta charset="utf-8">
@@ -15,25 +16,28 @@
         <title>Westscott Games</title>
     </head>
     <body>
+        <!--? EMBED HEADER FILE ?-->
         <div class="headerParent"> 
             <div class="headerChild">
                 <h2>Westscott<br>Games</h2>
                 <table class="headerTable">
                     <thead>
                         <tr>
-                            <th class="headerButton">HOME</th>
-                            <th class="headerButton">INFO</th>
-                            <th class="headerButton">GAMES</th>
-                            <th class="headerButton">RESOURCES</th>
+                            <th class="headerButton"> <a href="./index.html">HOME</a></th>
+                            <th class="headerButton"> <a href="./Pages/index_info.html">INFO</a></th>
+                            <th class="headerButton"> <a href="./Pages/index_games.html">GAMES</a></th>
+                            <th class="headerButton"> <a href="./Pages/index_resources.html">RESOURCES</a></th>
                         </tr>
                     </thead>
-                </table>    
+                </table>
             </div>
         </div>
         <br>
+        <center><h2>HOME</h2></center>
         <div class="bodyContainer">
-            <iframe src="./Games/InfRun/index.html"></iframe>
+            <div class="gameContainer">
+                <iframe src="./Games/InfRun/index.html"></iframe>
+            </div>
         </div>
-        <div class="vhs-static"></div>
     </body>
 </html>
