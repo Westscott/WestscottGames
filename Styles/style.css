@@ -1,9 +1,63 @@
 /*? Universal Style */
-* { background-color: rgb(221, 221, 221); }
+body {
+    background: radial-gradient(5rad white 0%, black 100%);
+    font-family: 'Inter', 'Segoe UI', system-ui, Roboto;
+}
 
+h1, h2, h3 {
+    color: #1e2a3e;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+} 
 
 
 /*? Header Styles */
 .headerParent { 
-    
+    display: flex;
+    justify-content:flex-start;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 40px -12px black;
+    border-radius: 0.2rem;
+}
+.headerTable {
+    margin: 2px;
+    width: 80%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: center;
+    align-content: center;
+}
+.headerButtonContainer {
+    background-color: rgba(0, 0, 0, 0);
+}
+.headerButton {
+    border-radius: 0.2rem;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: center;
+    align-content: center;
+}
+.headerButton:hover {
+    border-radius: 0rem;
+    background-color: rgba(21, 255, 0, 0.63);
+    scale: 110%;
+}
+
+/*? Body Styles */
+.bodyContainer { 
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px -12px black;
+    border-radius: 0.2rem;
 }
