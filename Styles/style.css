@@ -1,14 +1,43 @@
 /*? Universal Style */
-body {
-    background: radial-gradient(5rad white 0%, black 100%);
-    font-family: 'Inter', 'Segoe UI', system-ui, Roboto;
-    align-items: center;
-    align-content: center;
-    align-self: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+body {
+    overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+    background-color: rgb(8, 8, 8);
+    font-family: 'Inter', 'Segoe UI', system-ui, Roboto;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255, 0, 255, 0.1) 1px, transparent 1px);
+	background-size: 50px 50px;
+	z-index: -1;
+}
+
 h1, h2, h3 {
-    color: #1e2a3e;
+    color: #687894;
 } 
+
+iframe {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width: 720px;
+    height: 480px;
+}
 
 /*? Header Styles */
 .headerParent { 
@@ -18,7 +47,7 @@ h1, h2, h3 {
     backdrop-filter: blur(10px);
     width: 100%;
 
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.767);
     box-shadow: 0 20px 40px -12px black;
     border-radius: 0.2rem;
 }
@@ -38,7 +67,7 @@ h1, h2, h3 {
 .headerButton {
     padding: 10px;
     border-radius: 0.2rem;
-    background-color: rgba(34, 148, 40, 0.377);
+    background-color: rgba(34, 148, 40, 0.637);
     align-self: center;
     align-content: center;
 }
@@ -50,13 +79,43 @@ h1, h2, h3 {
 
 /*? Body Styles */
 .bodyContainer { 
+    align-self: center;
     align-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100%;
     min-height: 700px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(39, 179, 62, 0.014);
     box-shadow: 0 20px 40px -12px black;
     border-radius: 0.2rem;
+}
+
+
+/*? EFFECTS */
+.vhs-static {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: repeating-linear-gradient(
+		90deg,
+		transparent,
+		transparent 2px,
+		rgba(255, 255, 255, 0.01) 2px,
+		rgba(255, 255, 255, 0.01) 4px
+	);
+	opacity: 0.3;
+	animation: vhsStatic 0.2s steps(2, end) infinite;
+	pointer-events: none;
+}
+
+@keyframes vhsStatic {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(4px);
+	}
 }
