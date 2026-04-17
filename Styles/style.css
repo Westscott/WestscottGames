@@ -32,11 +32,7 @@ h1, h2, h3 {
 } 
 
 iframe {
-    border: none;
     max-width: 100%;
-    align-self: center;
-    align-content: center;
-    align-items: center;
     width: 960px;
     height: 600px;
 }
