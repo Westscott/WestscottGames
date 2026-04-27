@@ -1,47 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9QSKK5S5C"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Westscott Games | Future of Development</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9QSKK5S5C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-R9QSKK5S5C');
-        </script>
+    gtag('config', 'G-R9QSKK5S5C');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet", href="Styles/style.css">
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="container">
+    <header class="header">
+        <div class="logo-area">
+            <div class="logo"><i class="fas fa-gamepad"></i> WESTSCOTT GAMES</div>
+            <div class="badge"><i class="fas fa-tv"></i> est. 2021 | Future of Development</div>
+        </div>
+        <div class="nav-tabs" id="tabContainer">
+            <button class="tab-btn active" data-tab="home"><i class="fas fa-home"></i> HOME</button>
+            <button class="tab-btn" data-tab="info"><i class="fas fa-info-circle"></i> INFO</button>
+            <button class="tab-btn" data-tab="games"><i class="fas fa-dice-d6"></i> GAMES</button>
+            <button class="tab-btn" data-tab="webgames"><i class="fas fa-globe"></i> WEB GAMES</button>
+            <button class="tab-btn" data-tab="resources"><i class="fas fa-cubes"></i> RESOURCES</button>
+        </div>
+    </header>
 
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="description" content="Play the best free online browser games at westscott.games. New games added / updated daily. No downloads, instant play!">
-        <meta name="keywords" content="Browser Game, Online Game, Free Games, West games">
-        <meta name="author" content="Matthew S Weston">
-        <link rel="stylesheet", href="Styles/style.css">
-        <title>Westscott Games</title>
-    </head>
-    <body>
-        <!--? EMBED HEADER FILE ?-->
-        <div class="headerParent"> 
-            <div class="headerChild">
-                <h2>Westscott<br>Games</h2>
-                <table class="headerTable">
-                    <thead>
-                        <tr>
-                            <th class="headerButton"> <a href="./index.html">HOME</a></th>
-                            <th class="headerButton"> <a href="./Pages/index_info.html">INFO</a></th>
-                            <th class="headerButton"> <a href="./Pages/index_games.html">GAMES</a></th>
-                            <th class="headerButton"> <a href="./Pages/index_resources.html">RESOURCES</a></th>
-                        </tr>
-                    </thead>
-                </table>
+    <main class="content-panel">
+        <!-- HOME SECTION (with added news cards) -->
+        <div id="home" class="tab-section active-section">
+            <div class="basic-container">
+                <div class="hero-greeting"><i class="fas fa-crown"></i> WELCOME TO THE REVOLUTION</div>
+                <h2>Where creativity meets insanity.</h2>
+                <p class="desc-text">A one man team striving to create fun and accessible games. Join my journey as I attempt to create a game a year for everyone to enjoy. Every game you see on here was developed by Westscott Games.</p>
+                <div class="stats">
+                    <div class="stat-item"><i class="fas fa-star"></i> Free Forever</div>
+                    <div class="stat-item"><i class="fas fa-microchip"></i> Runs on most hardware</div>
+                    <div class="stat-item"><i class="fas fa-globe"></i> 50k+ players worldwide</div>
+                </div>
+                <br>
+                <br>
+                <a href="#" class="btn-ghost"><i class="fab fa-discord"></i> Join Community</a>
+            </div>
+            <br>
+            <div class="basic-container">
+                <!-- NEW UPDATES / NEWS SECTION in image card style -->
+                <h2 style="margin-top: 2rem; border-left-color: #0ff;"><i class="fas fa-newspaper"></i> Recent News & Updates</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-img"><i class="fas fa-gamepad" style="font-size: 3rem;"></i></div>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> April 20, 2026</div>
+                        <h4>Westscott Games Website:</h4>
+                        <p>Launch: Wescott Games official website is now live with resources, new games and more!</p>
+                        <br>
+                        <br>
+                        <a href="#" class="btn-ghost" style="margin-top: 0.5rem;">Read More →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-img"><i class="fas fa-download"></i></div>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> April 12, 2026</div>
+                        <h4>Drift.Wav II Development Update:</h4>
+                        <p>New Garage system & Replay system as well as other major VFX, sound and physics updates!</p>
+                        <br>
+                        <br>
+                        <a href="#" class="btn-ghost" style="margin-top: 0.5rem;">Patch Notes →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-img"><i class="fas fa-trophy"></i></div>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> April 2, 2026</div>
+                        <h4>Drift.Wav Update:</h4>
+                        <p>Major Update: Overhaul to most systems & physics as well as security & UI updates.</p>
+                        <br>
+                        <br>
+                        <a href="#" class="btn-ghost" style="margin-top: 0.5rem;">Event Details →</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <center><h2>HOME</h2></center>
-        <div class="bodyContainer">
-            <div class="gameContainer">
-                <iframe src="./Games/InfRun/index.html"></iframe>
+
+        <!-- INFO SECTION -->
+        <div id="info" class="tab-section">
+            <div class="basic-container">
+                <h2>About Westscott Games</h2>
+                <p class="desc-text">Starting in 2021 - Westscott Games is a one man operation built on passion & the true love of games. Building games every second of my free time I strive to create enjoyment for everyone of all ages while building a strong community of people from all over the world.</p>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;">
+                    <div class="basic-container">
+                        <div style="flex:1; width: 350px;">
+                            <h3><u>MISSION</u></h3><p>Free and Accessible titles for everyone while ensuring that anyone can run on them on their target machine of choice.</p>
+                        </div>
+                    </div>
+
+                    <div class="basic-container">
+                        <div style="flex:1; width: 350px;">
+                            <h3><u>THE TEAM</u></h3>
+                            <h4>Solo Developer - <a href="https://www.matthewsweston.com" class="btn-ghost-normal" style="margin-top: 0.5rem;">Matthew Weston</a></h4>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="badge-platform" style="background:#ff22aa33"><i class="fas fa-calendar-alt"></i> Since 2021 — 4 released titles & counting</div>
             </div>
         </div>
-    </body>
+
+        <!-- GAMES SECTION (traditional releases) -->
+        <div id="games" class="tab-section">
+            <div class="basic-container">
+                <h2>Featured Games</h2>
+                <div class="games-grid">
+
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <i class="fas fa-dice-d6"></i>
+                        </div>
+                        <h4>Drift.Wav II</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Coming 2026</div>
+                        <br>
+                        <p>3D Multiuplayer action packed drifting game with major udpates since the first title.</p>
+                        <a href="https://store.steampowered.com/app/3753100/DriftWav_II/" class="btn-ghost" style="margin-top: 0.5rem;">Store Page</a>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <i class="fas fa-dice-d6"></i>
+                        </div>
+                        <h4>Dream Slayers</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Nov 14, 2025</div>
+                        <br>
+                        <p>3D Multiuplayer action packed combat game with upgrades, shops, pets and more!</p>
+                        <a href="https://store.steampowered.com/app/3553650/Dream_Slayers/" class="btn-ghost" style="margin-top: 0.5rem;">PC / STEAM</a>
+                    </div>
+            
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <i class="fas fa-dice-d6"></i>
+                        </div>
+                        <h4>The Traveler</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Dec 18, 2024</div>
+                        <br>
+                        <p>2D Physics based endless jumping / parkour game with leaderboards.</p>
+                        <a href="https://store.steampowered.com/app/2915060/The_Traveler/" class="btn-ghost" style="margin-top: 0.5rem;">PC / STEAM</a>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <i class="fas fa-dice-d6"></i>
+                        </div>
+                        <h4>Drift.Wav</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Oct 27, 2023</div>
+                        <br>
+                        <p>3D Physics based arcade drifting game with multiplayer & leaderboards!</p>
+                        <a href="https://store.steampowered.com/app/2613610/DriftWav/" class="btn-ghost" style="margin-top: 0.5rem;">PC / STEAM</a>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <i class="fas fa-dice-d6"></i>
+                        </div>
+                        <h4>Try Me</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Jul 11, 2022</div>
+                        <br>
+                        <p>3D Physics based platforming / rage game with leaderboards.</p>
+                        <a href="https://store.steampowered.com/app/2019220/Try_Me/" class="btn-ghost" style="margin-top: 0.5rem;">PC / STEAM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW WEB GAMES TAB (browser-playable demos & originals) -->
+        <div id="webgames" class="tab-section">
+            <div class="basic-container">
+                <h2>Web Games — Play in Browser</h2>
+                <p class="desc-text">Instant arcade action, no download required. Experience small-scaled games directly from your browser. Optimized for desktop & mobile.</p>
+                <div class="webgames-grid">
+                    <div class="webgame-card">
+                        <div class="webgame-icon"><i class="fas fa-globe"></i></div>
+                        <h4>Hockey Game</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Coming Soon</div>
+                        <br>
+                        <p>Simple hockey game where you try to score against AI opponents.</p>
+                        <div style="margin-top: 1rem;"><a href="./Games/InfiniteRunGame/index.html" class="btn-ghost">Coming Soon</a></div>
+                    </div>
+                    <div class="webgame-card">
+                        <div class="webgame-icon"><i class="fas fa-globe"></i></div>
+                        <h4>Retro Ore Rush</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Apr 25, 2026</div>
+                        <br>
+                        <p>Endless 2D mining game with upgrades & more!</p>
+                        <div style="margin-top: 1rem;"><a href="./Games/InfiniteRunGame/index.html" class="btn-ghost">PLAY NOW</a></div>
+                    </div>
+                    <div class="webgame-card">
+                        <div class="webgame-icon"><i class="fas fa-globe"></i></div>
+                        <h4>Infinite Runner 3D</h4>
+                        <div class="news-date"><i class="far fa-calendar-alt"></i> Apr 17, 2026</div>
+                        <br>
+                        <p>Very Simple infinite runner game in 3d developed in 24 hours!</p>
+                        <div style="margin-top: 1rem;"><a href="./Games/InfiniteRunGame/index.html" class="btn-ghost">PLAY NOW</a></div>
+                    </div>
+                </div>
+                <hr>
+                <div style="background:#03060eaa; padding: 1rem; margin-top: 1rem; border-left: 4px solid cyan;">
+                    Web Games powered by WebGL & support basic saving and loading.
+                </div>
+            </div>
+        </div>
+
+        <!-- RESOURCES SECTION -->
+        <div id="resources" class="tab-section">
+            <div class="basic-container">
+                <h2>Resources & Contact</h2>
+                <div class="resources-grid">
+                    <!--
+                    <div class="resource-card"><i class="fas fa-code-branch"></i><h4>SDK & API</h4><p>Westscott Modding Kit — create custom levels, skins, and share with community.</p><a href="#" class="btn-ghost"><i class="fas fa-download"></i> Get SDK</a></div>
+                    <div class="resource-card"><i class="fas fa-palette"></i><h4>ART ASSETS</h4><p>Official pixel sprites, concept arts, and press kit for content creators.</p><a href="#" class="btn-ghost"><i class="fas fa-image"></i> Download Kit</a></div>
+                    <div class="resource-card"><i class="fas fa-book"></i><h4>DEVELOPER BLOG</h4><p>Technical deep dives, devlogs, retro programming insights, and game design essays.</p><a href="#" class="btn-ghost"><i class="fas fa-glasses"></i> Read Blog</a></div>
+                    -->
+                    <div class="resource-card">
+                        <div class="webgame-icon"><i class="fas fa-cubes"></i></div>
+                        <h4>COMMUNITY HUB</h4>&nbsp;
+                        <p>- Updates</p>
+                        <p>- Public Forums</p>
+                        <p>- Content Sharing</p>
+                        <p>- Lots more fun!</p>
+                        <a href="#" class="btn-ghost"><i class="fab fa-discord"></i> Join Community</a></div>
+                </div>
+                <hr>
+                <div style="background: #03060eaa; padding: 1rem; margin-top: 1.5rem; border-left: 4px solid #ff44ee;">
+                    <i class="fas fa-envelope"></i> <strong>Press Inquiries / Contact:</strong> matthewsweston01@gmail.com &nbsp;
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><i class="fas fa-copyright"></i> 2026 Westscott Games — Future of Development. All trademarks belong to their respective owners.</p>
+        <p style="font-size: 0.7rem; margin-top: 0.7rem"><i class="fas fa-crt"></i> Made with love</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const sections = {
+            home: document.getElementById('home'),
+            info: document.getElementById('info'),
+            games: document.getElementById('games'),
+            webgames: document.getElementById('webgames'),
+            resources: document.getElementById('resources')
+        };
+
+        function activateTab(tabId) {
+            Object.values(sections).forEach(section => {
+                if(section) section.classList.remove('active-section');
+            });
+            if(sections[tabId]) sections[tabId].classList.add('active-section');
+            tabBtns.forEach(btn => {
+                const btnTab = btn.getAttribute('data-tab');
+                if(btnTab === tabId) btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+        }
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const tabId = btn.getAttribute('data-tab');
+                if(tabId && sections[tabId]) activateTab(tabId);
+                btn.style.transform = "scale(0.97)";
+                setTimeout(() => { if(btn) btn.style.transform = ""; }, 120);
+            });
+        });
+
+        const handleHash = () => {
+            const hash = window.location.hash.substring(1);
+            if(hash && sections[hash]) activateTab(hash);
+            else if(!document.querySelector('.tab-section.active-section')) activateTab('home');
+        };
+        window.addEventListener('hashchange', handleHash);
+        handleHash();
+
+        // Smooth scroll for active tab on mobile if needed
+        const observer = new MutationObserver(() => {
+            const activeTab = document.querySelector('.tab-btn.active');
+            if(activeTab && window.innerWidth < 700) {
+                activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+        });
+        observer.observe(document.querySelector('.nav-tabs'), { attributes: true, subtree: true, childList: true });
+    })();
+</script>
+</body>
 </html>
