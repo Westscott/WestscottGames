@@ -194,22 +194,30 @@
                         <h4>Retro Ore Rush</h4>
                         <div class="news-date"><i class="far fa-calendar-alt"></i> Apr 25, 2026</div>
                         <br>
-                        <p>Endless 2D Physics based mining game with shops, upgrades and plenty of ores to mine!</p>
-                        <div style="margin-top: 1rem;"><a href="./Games/RetroOreRush/index.html" class="btn-ghost">PLAY NOW</a></div>
+                        <p>Endless 2D Physics based mining game with shops, upgrades and plenty of ores to mine! (W.I.P)</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#" onclick="LoadGame('./Games/RetroOreRush/index.html')" class="btn-ghost">PLAY NOW</a>
+                        </div>
                     </div>
                     <div class="webgame-card">
                         <div class="webgame-icon"><i class="fas fa-globe"></i></div>
                         <h4>Infinite Runner 3D</h4>
                         <div class="news-date"><i class="far fa-calendar-alt"></i> Apr 17, 2026</div>
                         <br>
-                        <p>Very Simple 3D Infinite running / jumping game developed in less than 24 hours!</p>
-                        <div style="margin-top: 1rem;"><a href="./Games/InfiniteRunGame/index.html" class="btn-ghost">PLAY NOW</a></div>
+                        <p>Very Simple 3D Infinite running / jumping game developed in less than 24 hours! (W.I.P)</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="#" onclick="LoadGame('./Games/InfiniteRunGame/index.html')" class="btn-ghost">PLAY NOW</a>
+                        </div>
                     </div>
                 </div>
                 <hr>
                 <div style="background:#03060eaa; padding: 1rem; margin-top: 1rem; border-left: 4px solid cyan;">
                     Web Games powered by WebGL & support basic saving and loading.
                 </div>
+                <br>
+                <center>
+                    <iframe class="gameFrame" src="" style="display: none; width: 700px; height: 500px;"></iframe>
+                </center>
             </div>
         </div>
 
@@ -292,6 +300,14 @@
             }
         });
         observer.observe(document.querySelector('.nav-tabs'), { attributes: true, subtree: true, childList: true });
+
+        function LoadGame(tempLink) 
+        {
+            var _frame = document.getElementsByClassName("gameFrame")[0];
+            _frame.src = tempLink;
+            _frame.style.display = "block";
+            _frame.scrollTo();
+        }
 </script>
 </body>
 </html>
